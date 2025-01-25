@@ -4,7 +4,7 @@ import EmailInput from "./form-components/EmailInput";
 import DateInput from "./form-components/DateInput";
 import TextAreaInput from "./form-components/TextAreaInput";
 import NumberInput from "./form-components/NumberInput";
-import MultiSelectInput from "./form-components/MultiselectInput";
+import MultiSelectInput from "./form-components/MultiSelectInput";
 import { FormLabel } from "@mui/material";
 
 interface FormBuilderProps {
@@ -15,7 +15,7 @@ function FormBuilder({ formFields }: FormBuilderProps) {
   return (
     <form className="form-builder">
       <FormLabel>Form</FormLabel>
-      
+
       {formFields.map((field, index) => {
         switch (field.type) {
           case FormFieldType.TEXT:
